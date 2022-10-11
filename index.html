@@ -1,0 +1,165 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Audio Samples</title>
+</head>
+
+<body style="text-align: left;">
+<h1 style="text-align: center">Adversarially Trained Multi-Singer Sequence-To-Sequence Singing Synthesizer</h1>
+
+<h4 style='display:inline'>Authors: </h4> <p style='display:inline'>Jie Wu, Jian Luan</p>
+<br>
+<br>
+<h4 style='display:inline'>Abstract: </h4> <p style='display:inline'>This paper presents a high quality singing synthesizer that isable to model a voice with limited available recordings. Basedon the sequence-to-sequence singing model, we design a multi-singer framework to leverage all the existing singing data of different singers. To attenuate the issue of musical score unbalance among singers, we incorporate an adversarial task of singer classification to make encoder output less singer dependent. Furthermore, we apply multiple random window discriminators (MRWDs) on the generated acoustic features to make the network be a GAN. Both objective and subjective evaluations indicate that the proposed synthesizer can generate higher quality singing voice than baseline (4.12 vs 3.53 in MOS). Especially, the articulation of high-pitched vowels is significantly enhanced.</p>
+
+
+<hr>
+<p><strong>Note:</strong> Please ensure your web browser supports wav audio format. You can choose Microsoft Edge, Google Chrome, Firefox, Opera and Safari.</p>
+<p>&nbsp;</p>
+<h3 style="text-align: center">MOS Test on singing voice quality</h3>
+
+<table align="center" width="81%" border="1">
+  <tbody>
+    <tr>
+      <th width="22%" style="text-align: center" scope="col">Recording</th>
+      <th width="26%" style="text-align: center" scope="col">System1</th>
+      <th width="26%" style="text-align: center" scope="col">System2</th>
+      <th width="26%" style="text-align: center" scope="col">System3</th>
+      <th width="26%" style="text-align: center" scope="col">System4</th>
+      <th width="26%" style="text-align: center" scope="col">System5</th>
+    </tr>
+    
+    <tr>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/Recording/0000000020-21.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System1/0000000020-21.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System2/0000000020-21.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System3/0000000020-21.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System4/0000000020-21.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System5/0000000020-21.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+    
+    <tr>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/Recording/0000000020-15.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System1/0000000020-15.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System2/0000000020-15.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System3/0000000020-15.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System4/0000000020-15.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System5/0000000020-15.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+    
+    <tr>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/Recording/0000000020-18.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System1/0000000020-18.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System2/0000000020-18.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System3/0000000020-18.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System4/0000000020-18.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/mos/System5/0000000020-18.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 style="text-align: center">A/B Tests on the articulation of high-pitched vowels</h3>
+
+<table align="center" width="71%" border="1">
+  <tbody>
+    <tr>
+      <th width="26%" style="text-align: center" scope="col">System1</th>
+      <th width="26%" style="text-align: center" scope="col">System2</th>
+      <th width="26%" style="text-align: center" scope="col">System3</th>
+      <th width="26%" style="text-align: center" scope="col">System4</th>
+      <th width="26%" style="text-align: center" scope="col">System5</th>
+    </tr>
+	
+    <tr>      
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System1/0000000018-17.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System2/0000000018-17.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System3/0000000018-17.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System4/0000000018-17.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System5/0000000018-17.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+
+    <tr>     
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System1/0000000018-18.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System2/0000000018-18.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System3/0000000018-18.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System4/0000000018-18.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System5/0000000018-18.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+
+    <tr>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System1/0000000018-20.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System2/0000000018-20.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System3/0000000018-20.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System4/0000000018-20.wav" type="audio/wav">
+      </audio></td>
+      <td width="26%" style="text-align: center"><audio controls>
+        <source src="samples/abtest/System5/0000000018-20.wav" type="audio/wav">
+      </audio></td>
+    </tr>
+  </tbody>
+</table>
