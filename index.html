@@ -7,12 +7,12 @@
 </head>
 
 <body style="text-align: left;">
-<h1 style="text-align: center">FastClone: Speaker-Guided Parallel Subnet Selection for Few-shot Text-to-Speech</h1>
+<h1 style="text-align: center">LightClone: Speaker-Guided Parallel Subnet Selection for Few-shot Voice Cloning</h1>
 
 <h4 style='display:inline'>Authors: </h4> <p style='display:inline'>Jie Wu, Jian Luan, Yujun Wang</p>
 <br>
 <br>
-<h4 style='display:inline'>Abstract: </h4> <p style='display:inline'>Large-scale few-shot voice cloning service faces three main challenges: model storage for huge number of users , fast model training and real-time synthesis. They are all involve model size directly. It is noted that the few-shot voice cloning usually has much bigger model size than that of common TTS trained with one speaker corpus, since its source model need to have more parameters to remain the characteristics of various speakers. However, it also indicates that a high quality TTS model for one voice could be much smaller. Inspired by it, speaker-guided parallel subnet selection (SG-PSS) is proposed in this paper. By this method, many subnets of source model are trimmed according to speaker embedding in adaptation phase. Therefore, adaptation training and inference time can be shortened remarkably and the final model size becomes much smaller.Experiments results show that SG-PSS achieves 4x model compression ratio and 3x inference speedup with slightly better performance in voice quality and speaker similarity, in comparison with baseline. </p>
+<h4 style='display:inline'>Abstract: </h4> <p style='display:inline'>Large-scale few-shot voice cloning service faces three main challenges: model storage for huge number of users, fast model training and real-time synthesis. They all involve model size directly. It is noted that the few-shot voice cloning usually has much bigger model size than common TTS trained by one speaker corpus, since its source model needs more parameters to hold the characteristics of various speakers. However, it also indicates that a high quality TTS model for one voice could be much smaller. To reduce model size of voice cloning, speaker-guided parallel subnet selection (SG-PSS) is proposed in this paper. In adaptation phase, only one subnet is selected from parallel ones of source model for target speaker. By this method, adaptation training and inference can be must faster as well. Experiment results show that the proposed approach achieves 4x model compression ratio, 3x inference speedup and even slightly better performance in voice quality and speaker similarity in comparison with baseline.</p>
 
 
 <hr>
