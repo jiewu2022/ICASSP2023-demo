@@ -7,170 +7,123 @@
 </head>
 
 <body style="text-align: left;">
+
 <h1 style="text-align: center">LightClone: Speaker-Guided Parallel Subnet Selection for Few-shot Voice Cloning</h1>
 
 <h4 style='display:inline'>Authors: </h4> <p style='display:inline'>Jie Wu, Jian Luan, Yujun Wang</p>
 <br>
+<h4 style='display:inline'>Emails: </h4> <p style='display:inline'>{wujie9, luanjian, wangyujun}@xiaomi.com</p>
 <br>
-<<<<<<< HEAD
-<h4 style='display:inline'>Abstract: </h4> <p style='display:inline'>Large-scale few-shot voice cloning service faces three main challenges: model storage for huge number of users, fast model training and real-time synthesis. They all involve model size directly. It is noted that the few-shot voice cloning usually has much bigger model size than common TTS trained by one speaker corpus, since its source model needs more parameters to hold the characteristics of various speakers. However, it also indicates that a high quality TTS model for one voice could be much smaller. To reduce model size of voice cloning, speaker-guided parallel subnet selection (SG-PSS) is proposed in this paper. In adaptation phase, only one subnet is selected from parallel ones of source model for target speaker. By this method, adaptation training and inference can be must faster as well. Experiment results show that the proposed approach achieves 4x model compression ratio, 3x inference speedup and even slightly better performance in voice quality and speaker similarity in comparison with baseline.</p>
-=======
-<h4 style='display:inline'>Abstract: </h4> <p style='display:inline'>Large-scale few-shot voice cloning service faces three main challenges: model storage for huge number of users, fast model training and real-time synthesis. They all involve model size directly. It is noted that the few-shot voice cloning usually has much bigger model size than common TTS trained by one speaker corpus, since its source model needs more parameters to hold the characteristics of various speakers. However, it also indicates that a high quality TTS model for one voice could be much smaller. To reduce model size of voice cloning, speaker-guided parallel subnet selection (SG-PSS) is proposed in this paper. In adaptation phase, only one subnet is selected from parallel ones of source model for target speaker. By this method, adaptation training and inference can be must faster as well. Experiment results show that the proposed approach achieves 4x model compression ratio, 3x inference speedup and even slightly better performance in voice quality and speaker similarity in comparison with baseline. </p>
->>>>>>> ba4d49b5865d25cb076b677b5653ee59df8ef75c
-
-
+<br>
+<h4 style='display:inline'>Abstract: </h4> <p style='display:inline'>Large-scale few-shot voice cloning service faces three main challenges: model storage for huge number of users, fast model training and real-time synthesis. They all involve model size directly. It is noted that the few-shot voice cloning usually has much bigger model size than common TTS trained by one speaker corpus, since its source model needs more parameters to hold the characteristics of various speakers. However, it also indicates that a high quality TTS model for one voice could be much smaller. To reduce model size of voice cloning, speaker-guided parallel subnet selection (SG-PSS) is proposed in this paper. In adaptation phase, only one subnet is selected from parallel ones of source model for target speaker. By this method, adaptation training and inference can be must faster as well.Experiment results show that the proposed approach achieves 4x model compression ratio, 3x inference speedup and even slightly better performance in voice quality and speaker similarity in comparison with baseline.</p>
 <hr>
 <p><strong>Note:</strong> Please ensure your web browser supports wav audio format. You can choose Microsoft Edge, Google Chrome, Firefox, Opera and Safari.</p>
-<p>&nbsp;</p>
-<h3 style="text-align: center">MOS Test on voice quality and speaker similarity</h3>
-
-<table align="center" width="81%" border="1">
-  <tbody>
-    <tr>
-      <th width="22%" style="text-align: center" scope="col">Recording</th>
-      <th width="26%" style="text-align: center" scope="col">Base-lower</th>
-      <th width="26%" style="text-align: center" scope="col">Base-upper</th>
-      <th width="26%" style="text-align: center" scope="col">SG-PSS</th>
-      <th width="26%" style="text-align: center" scope="col">DSG-PSS</th>
-    </tr>
-    
-    <tr>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Recording/hangjun_02.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-lower/hangjun_02.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-upper/hangjun_02.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/SG-PSS/hangjun_02.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/DSG-PSS/hangjun_02.wav" type="audio/wav">
-      </audio></td>
-    </tr>
-	
-	<tr>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Recording/hangjun_05.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-lower/hangjun_05.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-upper/hangjun_05.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/SG-PSS/hangjun_05.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/DSG-PSS/hangjun_05.wav" type="audio/wav">
-      </audio></td>
-    </tr>
-	<tr>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Recording/hangjun_12.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-lower/hangjun_12.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-upper/hangjun_12.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/SG-PSS/hangjun_12.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/DSG-PSS/hangjun_12.wav" type="audio/wav">
-      </audio></td>
-    </tr>
-	<tr>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Recording/hangjun_14.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-lower/hangjun_14.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-upper/hangjun_14.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/SG-PSS/hangjun_14.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/DSG-PSS/hangjun_14.wav" type="audio/wav">
-      </audio></td>
-    </tr>
-	<tr>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Recording/pengbei_05.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-lower/pengbei_05.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-upper/pengbei_05.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/SG-PSS/pengbei_05.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/DSG-PSS/pengbei_05.wav" type="audio/wav">
-      </audio></td>
-    </tr>
-	<tr>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Recording/pengbei_07.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-lower/pengbei_07.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-upper/pengbei_07.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/SG-PSS/pengbei_07.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/DSG-PSS/pengbei_07.wav" type="audio/wav">
-      </audio></td>
-    </tr>
-	<tr>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Recording/pengbei_12.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-lower/pengbei_12.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-upper/pengbei_12.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/SG-PSS/pengbei_12.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/DSG-PSS/pengbei_12.wav" type="audio/wav">
-      </audio></td>
-    </tr>
-	<tr>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Recording/pengbei_16.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-lower/pengbei_16.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/Base-upper/pengbei_16.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/SG-PSS/pengbei_16.wav" type="audio/wav">
-      </audio></td>
-      <td width="26%" style="text-align: center"><audio controls>
-        <source src="samples/DSG-PSS/pengbei_16.wav" type="audio/wav">
-      </audio></td>
-    </tr>
-	
-  </tbody>
+<hr>
+<h3 style="text-align: center">MOS Scores for Voice Quality and Speaker Similarity</h3>
+<body>
+<div align="center">
+<img src="images/MOS_v4.jpg" width="400" height="250" />
+</div>
+</body>
+<hr>
+<h3 style="text-align: center">Audio Samples</h3>
+<h4>Male Speaker 1: </h4>
+<blockquote>
+<table>
+<td align=center width=200>Recording</td><td><audio controls><source src="samples/Recording/hangjun_02.wav"></audio></td>
+<tr><td colspan=4><span>1.找到以下应用，请问你需要打开第几个？</span></td></tr>
+<tr>
+<td align=center width=200>Base-lower</td><td align=center width=200>Base-upper</td><td align=center width=200>SG-PSS</td><td align=center width=200>DSG-PSS</td>
+</tr>
+<tr>
+<td><audio controls><source src="samples/Base-lower/hangjun_02.wav"></audio></td>
+<td><audio controls><source src="samples/Base-upper/hangjun_02.wav"></audio></td>
+<td><audio controls><source src="samples/SG-PSS/hangjun_02.wav"></audio></td>
+<td><audio controls><source src="samples/DSG-PSS/hangjun_02.wav"></audio></td>
+</tr>
+<tr height="15px"></tr>
+<tr><td colspan=4><span>2.星星在天上，你在我心里，星星是夜空的，而你是我的。</span></td></tr>
+<tr>
+<td align=center width=200>Base-lower</td><td align=center width=200>Base-upper</td><td align=center width=200>SG-PSS</td><td align=center width=200>DSG-PSS</td>
+</tr>
+<tr>
+<td><audio controls><source src="samples/Base-lower/hangjun_05.wav"></audio></td>
+<td><audio controls><source src="samples/Base-upper/hangjun_05.wav"></audio></td>
+<td><audio controls><source src="samples/SG-PSS/hangjun_05.wav"></audio></td>
+<td><audio controls><source src="samples/DSG-PSS/hangjun_05.wav"></audio></td>
+</tr>
+<tr height="15px"></tr>
+<tr><td colspan=4><span>3.晚安，愿你喜欢的人到梦里见你哦。</span></td></tr>
+<tr>
+<td align=center width=200>Base-lower</td><td align=center width=200>Base-upper</td><td align=center width=200>SG-PSS</td><td align=center width=200>DSG-PSS</td>
+</tr>
+<tr>
+<td><audio controls><source src="samples/Base-lower/hangjun_12.wav"></audio></td>
+<td><audio controls><source src="samples/Base-upper/hangjun_12.wav"></audio></td>
+<td><audio controls><source src="samples/SG-PSS/hangjun_12.wav"></audio></td>
+<td><audio controls><source src="samples/DSG-PSS/hangjun_12.wav"></audio></td>
+</tr>
+<tr height="15px"></tr>
+<tr><td colspan=4><span>4.厉害了，这个问题我要花时间想想，先说点其他的吧。</span></td></tr>
+<tr>
+<td align=center width=200>Base-lower</td><td align=center width=200>Base-upper</td><td align=center width=200>SG-PSS</td><td align=center width=200>DSG-PSS</td>
+</tr>
+<tr>
+<td><audio controls><source src="samples/Base-lower/hangjun_14.wav"></audio></td>
+<td><audio controls><source src="samples/Base-upper/hangjun_14.wav"></audio></td>
+<td><audio controls><source src="samples/SG-PSS/hangjun_14.wav"></audio></td>
+<td><audio controls><source src="samples/DSG-PSS/hangjun_14.wav"></audio></td>
+</tr>
+<tr height="15px"></tr>
 </table>
+</blockquote>
+<h4>Female Speaker 1: </h4>
+<blockquote>
+<table>
+<td align=center width=200>Recording</td><td><audio controls><source src="samples/Recording/pengbei_05.wav"></audio></td>
+<tr><td colspan=4><span>1.星星在天上，你在我心里，星星是夜空的，而你是我的。</span></td></tr>
+<tr>
+<td align=center width=200>Base-lower</td><td align=center width=200>Base-upper</td><td align=center width=200>SG-PSS</td><td align=center width=200>DSG-PSS</td>
+</tr>
+<tr>
+<td><audio controls><source src="samples/Base-lower/pengbei_05.wav"></audio></td>
+<td><audio controls><source src="samples/Base-upper/pengbei_05.wav"></audio></td>
+<td><audio controls><source src="samples/SG-PSS/pengbei_05.wav"></audio></td>
+<td><audio controls><source src="samples/DSG-PSS/pengbei_05.wav"></audio></td>
+</tr>
+<tr height="15px"></tr>
+<tr><td colspan=4><span>2.爱你，有啥事直接和我说吧。</span></td></tr>
+<tr>
+<td align=center width=200>Base-lower</td><td align=center width=200>Base-upper</td><td align=center width=200>SG-PSS</td><td align=center width=200>DSG-PSS</td>
+</tr>
+<tr>
+<td><audio controls><source src="samples/Base-lower/pengbei_06.wav"></audio></td>
+<td><audio controls><source src="samples/Base-upper/pengbei_06.wav"></audio></td>
+<td><audio controls><source src="samples/SG-PSS/pengbei_06.wav"></audio></td>
+<td><audio controls><source src="samples/DSG-PSS/pengbei_06.wav"></audio></td>
+</tr>
+<tr height="15px"></tr>
+<tr><td colspan=4><span>3.晚安，愿你喜欢的人到梦里见你哦。</span></td></tr>
+<tr>
+<td align=center width=200>Base-lower</td><td align=center width=200>Base-upper</td><td align=center width=200>SG-PSS</td><td align=center width=200>DSG-PSS</td>
+</tr>
+<tr>
+<td><audio controls><source src="samples/Base-lower/pengbei_12.wav"></audio></td>
+<td><audio controls><source src="samples/Base-upper/pengbei_12.wav"></audio></td>
+<td><audio controls><source src="samples/SG-PSS/pengbei_12.wav"></audio></td>
+<td><audio controls><source src="samples/DSG-PSS/pengbei_12.wav"></audio></td>
+</tr>
+<tr height="15px"></tr>
+<tr><td colspan=4><span>4.点击下方的自定义场景，可以定制个性化的内容哦！</span></td></tr>
+<tr>
+<td align=center width=200>Base-lower</td><td align=center width=200>Base-upper</td><td align=center width=200>SG-PSS</td><td align=center width=200>DSG-PSS</td>
+</tr>
+<tr>
+<td><audio controls><source src="samples/Base-lower/pengbei_16.wav"></audio></td>
+<td><audio controls><source src="samples/Base-upper/pengbei_16.wav"></audio></td>
+<td><audio controls><source src="samples/SG-PSS/pengbei_16.wav"></audio></td>
+<td><audio controls><source src="samples/DSG-PSS/pengbei_16.wav"></audio></td>
+</tr>
+<tr height="15px"></tr>
+</table>
+</blockquote>
